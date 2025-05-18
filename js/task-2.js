@@ -3,7 +3,7 @@ function formatMessage(message, maxLength) {
   if (messageLength <= maxLength) {
     return message;
   }
-  const formattedMessage = message.slice(0, maxLength - 1) + '…';
+  const formattedMessage = message.slice(0, maxLength ) + "...";
   return formattedMessage;
 }
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
